@@ -4,7 +4,7 @@ setup(
       name='genie',
       version='0.0.2',
       description='de novo protein design through equivariantly diffusing oriented residue clouds',
-      packages=["genie", "genie.model", "genie.sampler", "genie.diffusion", "genie.constants"],#['genie'],
+      packages=["genie"],#['genie'],
       install_requires=[
             'tqdm',
             'numpy',
