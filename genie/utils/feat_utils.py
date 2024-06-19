@@ -172,7 +172,7 @@ def save_np_features_to_pdb(np_features, filepath):
 			line = ' ' * 80
 			line = replace(line, 0, 'ATOM')
 			line = replace(line, 6, str(atom_index).rjust(5))
-			line = replace(line, 13, 'CA')
+			line = replace(line, 13, np.random.choice(["CA","C","N","O"]))
 			line = replace(line, 17, residue_name)
 			line = replace(line, 21, chain_name)
 			line = replace(line, 22, str(residue_index).rjust(4))
